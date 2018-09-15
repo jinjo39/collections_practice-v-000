@@ -22,10 +22,13 @@ end
 def kesha_maker(array)
   new_array = []
   array.each do |word|
-    word.chars.each_with_index do |c, i|
+    new_word = word.chars.each_with_index do |c, i|
       if i == 2
         "$"
+      else
+         c
       end
-      new_array << end.join
-    end
+    end.join
+    new_array << new_word
+  end
 end
